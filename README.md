@@ -13,9 +13,13 @@ Show the marker at the drop off zone once your robot reaches it
 To run this program, run the following command in the terminal:
 
 $ cd home/robond/catkin_ws/
+
 $ source devel/setup.bash
+
 $ catkin_make
+
 $ cd home/robond/catkin_ws/src/scripts
+
 $ ./home_service.sh
 
 This project was completed by referencing the following sources:
