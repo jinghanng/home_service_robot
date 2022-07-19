@@ -13,6 +13,8 @@ bool pickUp = false;
 bool dropOff = false;
 bool haveObject = false;
 
+
+// Callback function to check if robot has reached the location of pick up or drop off zone.
 void callback(const nav_msgs::Odometry::ConstPtr& msg)
 {
   if(std::abs(pickUpGoal[0] -msg->pose.pose.position.x) < threshold && std::abs(pickUpGoal[1] -msg->pose.pose.position.y) < threshold)
