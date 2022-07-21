@@ -634,6 +634,19 @@ visualization_msgs_generate_messages_lisp/fast:
 .PHONY : visualization_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named home_service
+
+# Build rule for target.
+home_service: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 home_service
+.PHONY : home_service
+
+# fast build rule for target.
+home_service/fast:
+	$(MAKE) -f home_service/CMakeFiles/home_service.dir/build.make home_service/CMakeFiles/home_service.dir/build
+.PHONY : home_service/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
 
 # Build rule for target.
@@ -1839,6 +1852,7 @@ help:
 	@echo "... visualization_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... home_service"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"
