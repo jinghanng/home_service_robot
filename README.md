@@ -1,9 +1,9 @@
 This is the final project of the Udacity Robotics Software Engineer Nanodegree
 
-#Home Service Robot
+# Home Service Robot
 The project simulates a full home service robot capable of navigating to pick up and deliver virtual objects. To do so, the add_markers and pick_objects node should be communicating. Or, more precisely, the add_markers node should subscribe to your odometry to keep track of your robot pose.
 
-##Installation
+## Installation
 
 $ sudo apt-get update && apt-get upgrade
 
@@ -27,7 +27,7 @@ $ cd home/robond/catkin_ws/src/scripts
 
 $ ./home_service.sh
 
-##Packages
+## Packages
 
 The gmapping package provides laser-based SLAM (Simultaneous Localization and Mapping), as a ROS node called slam_gmapping. With slam_gmapping, one can create a 2-D occupancy grid map (like a building floorplan) from laser and pose data collected by a mobile robot.
 ```
